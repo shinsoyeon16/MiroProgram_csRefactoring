@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFMiroProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMiroProgram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="미로 만들기" Margin="-2,-2,-10,-1">
+                <local:CreateMiroView/>
+            </TabItem>
+            <TabItem Header="탈출하기" Margin="0,-2,-10,-1" HorizontalAlignment="Right" Width="76">
+                <local:EscapeMiroView/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
