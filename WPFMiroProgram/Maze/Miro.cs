@@ -141,7 +141,7 @@ namespace WPFMiroProgram.Maze
                         if (miro[0][j] == '0') { entry.row = 0; entry.col = j; }
                         else if (miro[i][0] == '0') { entry.row = i; entry.col = 0; }
                         if (miro[RowSize - 1][j] == '0') { exit.row = RowSize - 1; exit.col = j; }
-                        else if (miro[i][ColSize - 2] == '0') { exit.row = i; exit.col = ColSize - 2; }
+                        else if (miro[i][ColSize - 1] == '0') { exit.row = i; exit.col = ColSize - 1; }
                     }
                     isFindEntry = true;
                 }
